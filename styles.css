@@ -29,14 +29,25 @@ h4 {
   background-color: #d9ed92;
 }
 
-
 div.gallery {
   border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #E4E5E8;
+  margin: 10px;
+}
+
+div.gallery:hover {
+  cursor: pointer;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+div.gallery img:hover {
+  opacity: 0.8;
 }
 
 div.desc {
@@ -44,21 +55,25 @@ div.desc {
   text-align: center;
 }
 
-.responsive {
+div.details {
+	display: none;
+}
+
+.package {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
+  .package {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
+  .package {
     width: 100%;
   }
 }
