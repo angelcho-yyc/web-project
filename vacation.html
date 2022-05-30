@@ -36,13 +36,13 @@
 
 <!-- filter buttons -->
 <div id="btnContainer" class="container-fluid">
-  <button class="btn active" onclick="filter('all')">Show all</button>
-  <button class="btn" onclick="filter('america')">America</button>
-  <button class="btn" onclick="filter('europe')">Europe</button>
-  <button class="btn" onclick="filter('asia')">Asia</button>
-  <button class="btn" onclick="filter('africa')">Africa</button>
-  <button class="btn" onclick="filter('oceania')">Oceania</button>
-  <button class="btn" onclick="filter('antartica')">Antartica</button>
+  <button class="btn btn-filter active" onclick="filter('all')">Show all</button>
+  <button class="btn btn-filter" onclick="filter('america')">America</button>
+  <button class="btn btn-filter" onclick="filter('europe')">Europe</button>
+  <button class="btn btn-filter" onclick="filter('asia')">Asia</button>
+  <button class="btn btn-filter" onclick="filter('africa')">Africa</button>
+  <button class="btn btn-filter" onclick="filter('oceania')">Oceania</button>
+  <button class="btn btn-filter" onclick="filter('antartica')">Antartica</button>
 </div>
 
 <div class="container-fluid">
@@ -245,7 +245,7 @@ function filter(c) {
 }
 
 // show the button of current selection as active
-var btns = document.querySelectorAll(".btn");
+var btns = document.querySelectorAll(".btn-filter");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.querySelector("#btnContainer .active");

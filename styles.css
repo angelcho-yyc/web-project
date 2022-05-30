@@ -78,12 +78,6 @@ div.details {
   }
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .carousel-image {
 	max-height: 500px;
 	width: auto;
